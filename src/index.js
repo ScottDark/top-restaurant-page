@@ -1,1 +1,4 @@
-console.log("This is the captain speaking!");
+import createImgElement from "./modules/createImgElement";
+import "./style.css";
+
+createImgElement();
