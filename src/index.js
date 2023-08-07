@@ -1,4 +1,4 @@
-import createImgElement from "./modules/createImgElement";
 import "./style.css";
+import pageLoad from "./components/pageLoad";
 
-createImgElement();
+pageLoad();
