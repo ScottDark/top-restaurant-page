@@ -2,6 +2,8 @@ body,
 #content {
   min-height: 100vh;
   min-width: 100vw;
+  color: white;
+  background-color: #171717;
 }
 
 * {
