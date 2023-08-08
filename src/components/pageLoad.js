@@ -1,5 +1,9 @@
-import createImgElement from "/src/modules/createImgElement";
+import createRestaurantImg from "../modules/createRestaurantImg";
+import createTitleH1 from "../modules/createTitleH1";
+import createDescriptionPara from "../modules/createDescriptionPara";
 
 export default function pageLoad() {
-  createImgElement();
+  createRestaurantImg();
+  createTitleH1();
+  createDescriptionPara();
 }
