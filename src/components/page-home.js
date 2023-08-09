@@ -21,12 +21,7 @@ export default function pageLoad() {
   selectContentWrapper.appendChild(newTitle);
 
   const newRestaurantDescription =
-    "The Krusty Krab is a fictional fast food restaurant in the American" +
-    " animated television series SpongeBob SquarePants.It is famous for" +
-    " its signature burger, the Krabby Patty, the formula to which is" +
-    " a closely guarded trade secret. The restaurant was founded by" +
-    "Eugene H. Krabs, who is also the owner and manager.";
-
+    "The Krusty Krab is a fictional fast food restaurant in the American animated television series SpongeBob SquarePants. It is famous for its signature burger, the Krabby Patty, the formula to which is a closely guarded trade secret. The restaurant was founded by Eugene H. Krabs, who is also the owner and manager.";
   const newPara = createParagraph(newRestaurantDescription);
   selectContentWrapper.appendChild(newPara);
 }
