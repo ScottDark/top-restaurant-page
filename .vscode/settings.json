@@ -2,5 +2,5 @@
   "files.exclude": {
     "node_modules": true
   },
-  "cSpell.words": ["Krab", "Krabby", "Krabs", "Krusty"]
+  "cSpell.words": ["Img", "Krab", "Krabby", "Krabs", "Krusty", "popperjs"]
 }

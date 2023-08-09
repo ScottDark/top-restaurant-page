@@ -1,3 +1,6 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
 body,
 #content {
   min-height: 100vh;
@@ -14,4 +17,14 @@ body,
 
 .restaurant-img {
   width: 100%;
+}
+
+.nav,
+.nav-tabs {
+  justify-content: center;
+}
+
+#content,
+.container {
+  padding: 0px;
 }
