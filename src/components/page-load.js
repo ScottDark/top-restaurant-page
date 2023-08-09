@@ -6,7 +6,7 @@ import restImg from "/src/assets/imgs/krusty-krab.jpg";
 import createTitle from "../modules/create-title";
 
 // Create <p> descriptions.
-import createDescriptionPara from "../modules/create-description-para";
+import createParagraph from "../modules/create-paragraph";
 
 export default function pageLoad() {
   const selectContentWrapper = document.querySelector("#content");
@@ -19,5 +19,13 @@ export default function pageLoad() {
   const newTitle = createTitle("Come Spend Your Money Here!");
   selectContentWrapper.appendChild(newTitle);
 
-  createDescriptionPara();
+  const newRestaurantDescription =
+    "The Krusty Krab is a fictional fast food restaurant in the American" +
+    " animated television series SpongeBob SquarePants.It is famous for" +
+    " its signature burger, the Krabby Patty, the formula to which is" +
+    " a closely guarded trade secret. The restaurant was founded by" +
+    "Eugene H. Krabs, who is also the owner and manager.";
+
+  const newPara = createParagraph(newRestaurantDescription);
+  selectContentWrapper.appendChild(newPara);
 }

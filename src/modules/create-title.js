@@ -1,3 +1,4 @@
+/* Create <h1> title */
 export default function createTitle(txtMsg) {
   const selectContentWrapper = document.querySelector("#content");
 
