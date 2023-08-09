@@ -16,6 +16,9 @@ module.exports = {
     static: path.resolve(__dirname, "dist"),
     port: 8080,
     hot: true,
+    client: {
+      logging: "none",
+    },
   },
   plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })],
   module: {
