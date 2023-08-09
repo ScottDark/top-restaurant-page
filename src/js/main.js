@@ -1,4 +1,5 @@
-import "../scss/styles.scss";
-import pageLoad from "../components/page-load";
+import("../scss/styles.scss");
+import pageHome from "../components/page-home.js";
 
-pageLoad();
+// Load the main landing page.
+pageHome();

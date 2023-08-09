@@ -8,6 +8,7 @@ import createTitle from "../modules/create-title";
 // Create <p> descriptions.
 import createParagraph from "../modules/create-paragraph";
 
+/* Build the main landing page. */
 export default function pageLoad() {
   const selectContentWrapper = document.querySelector("#content");
   const imgAlt = "The Krusty Krab Restaurant";
