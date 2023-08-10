@@ -1,4 +1,4 @@
-import("../scss/styles.scss");
+import "../scss/styles.scss";
 import pageHome from "../components/page-home.js";
 
 /* Add event listeners to tab switching */
