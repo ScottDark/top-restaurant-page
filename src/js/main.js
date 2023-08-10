@@ -1,7 +1,5 @@
 import("../scss/styles.scss");
 import pageHome from "../components/page-home.js";
-import pageMenu from "../components/page-menu.js";
-import pageContact from "../components/page-contact.js";
 
 /* Add event listeners to tab switching */
 function tabSwitchingEventListeners() {
@@ -15,10 +13,9 @@ function tabSwitchingEventListeners() {
 }
 
 /* Dynamic tabs to switch between pages. */
-function tabSwitching(tab) {
+async function tabSwitching(tab) {
   const selectContentWrapper = document.querySelector("#content");
   const tabText = tab.innerText;
-  // console.log(tab.innerText + " was clicked!");
 
   switch (tabText) {
     case "Home":
@@ -29,12 +26,20 @@ function tabSwitching(tab) {
 
     case "Menu":
       unloadPage(tab);
+
+      let objM = await import("../components/page-menu.js");
+      let pageMenu = objM.default;
+
       pageMenu();
 
       break;
 
     case "Contact":
       unloadPage(tab);
+
+      let objC = await import("../components/page-contact.js");
+      let pageContact = objC.default;
+
       pageContact();
 
       break;
